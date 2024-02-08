@@ -140,7 +140,7 @@ h2{
 }
 .main-visual.active .visual {
     clip-path: circle(70.7% at 50% 50%);
-    background-color: #000;
+    background-color: #111;
 }
 .main-visual.invisible {
     opacity: 0;
@@ -162,13 +162,13 @@ h2{
     padding-top: 50px;
 }
 #intro .introduce {
-    width: 85%;
+    width: 1400px;
     margin: 0 auto;
 }
 
 #intro .introduce p {
     color: #fff;
-    font-size: 45px;
+    font-size: 35px;
     line-height: 1.5;
 }
 #intro .introduce p span {
