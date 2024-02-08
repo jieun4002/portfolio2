@@ -92,6 +92,34 @@ $(function () {
 
     });
 
+// 더보기 js
+    // 더보기를 할 전체 div에 id ="js-load"
+    // 더보기 될 각 리스트에 js-load class 붙어야함.
+
+    // 더보기 버튼에 id = "js-btn-wrap"
+
+
+    $(window).on('load', function () {
+        note_load('#js-load', '10'); //보여질 게시글 갯수. 
+        $("#js-btn-wrap .button").on("click", function () {
+            note_load('#js-load', '3', '#js-btn-wrap'); //클릭 후 로드될 게시글 갯수
+        });
+    });
+
+    function note_load(id, cnt, btn) {
+        var note_list = id + " .js-load:not(.block)";
+        var note_length = $(note_list).length;
+        var note_total_cnt;
+        if (cnt < note_length) {
+            note_total_cnt = cnt;
+        } else {
+            note_total_cnt = note_length;
+            $(btn).hide();
+
+        }
+        $(note_list + ":lt(" + note_total_cnt + ")").addClass("block");
+    }
+
 
 });
 // 브라우저 높이 값에 따라 높이값 계산
