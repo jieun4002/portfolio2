@@ -91,9 +91,18 @@ main{
 }
 
 /* --------------------------------------------------------------------- */
+body{
+    color: #fff;
+}
+
+section{
+    width: 1400px;
+    margin: 0 auto;
+
+}
 .container {overflow: hidden; position: relative;}
-h2{
-    font-size: 85px;
+.title{
+    font-size: 45px;
     color: #fff;
     font-weight: 700;
     line-height: 100%;
