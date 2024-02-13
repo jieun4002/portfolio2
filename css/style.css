@@ -203,6 +203,84 @@ h2{
     background-position: center center;
     background-color: #fff;
 }
+
+/* 경력 */
+#career .inner ul{
+    width: 50%;
+    margin: 50px auto;
+    position: relative;
+    padding: 50px 0;
+}
+
+#career .inner ul::before{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: #fff;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#career .inner ul li{
+    position: relative;
+    margin-bottom: 50px;
+    width: 50%;
+    padding-right: 11px;
+    text-align: right;
+}
+
+#career .inner ul li::before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border: 3px solid #adb5bd;
+    border-radius: 50px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+#career .inner ul li:nth-child(even){
+    margin-left: auto;
+    padding-left: 10px;
+    padding-right: 0;
+    text-align: left;
+}
+
+#career .inner ul li:nth-child(even)::before{
+    left: 0;
+}
+
+#career .inner ul li:last-child{
+    margin-bottom: 0;
+}
+
+#career .inner ul li p{
+    padding-right: 40px;
+    font-size: 18px;
+    line-height: 1.2;
+}
+#career .inner ul li p.year{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.6;
+}
+#career .inner ul li p span{
+    display: block;
+}
+
+#career .inner ul li:nth-child(even) p{
+    padding-right: 0;
+    padding-left: 40px;
+}
+
+
+
 #project .slick button.slick-prev {
     left: 10px;
     background-image: url(../images/icon/arrow-left-solid.svg);
