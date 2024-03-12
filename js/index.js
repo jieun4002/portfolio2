@@ -45,33 +45,26 @@ $(function () {
     })
 
     // slick
-    $('.slick').slick({
-        slidesToShow: 3.5,
-        infinite: false,
-        slidesToScroll: 2,
-        responsive: [
+    $(".slick").slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        speed: 800,
+        infinite: true,
+        responsive: [{
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                }
 
-            {
-                breakpoint: 1230,
-                settings: {
-                    slidesToShow: 2.5
-                }
             },
             {
-                breakpoint: 900,
+                breakpoint: 700,
                 settings: {
-                    slidesToShow: 2
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1
+                    slidesToShow: 1,
                 }
             }
         ]
     });
-
     // aos
     AOS.init();
 
